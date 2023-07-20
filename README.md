@@ -31,7 +31,7 @@ frameworks/libraries/language:
     prisma - ORM: Object relational mapper, TyORM : nestJs (mongodb, postgress, mysql, maria, cockroachDB)
     nodejs -
     typescript -
-    graphql -
+    graphql/apollo-server 4 -
     python
     java
     cucumber + playwright - PMT and Testing tools
