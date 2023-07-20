@@ -38,22 +38,28 @@ frameworks/libraries/language:
     Gherkin - BDD language
 
 ## Requirements
+
 You are required to create a ticketig system for tshwane municipality to track service delivery in the sorounding areas. as a backend team you job is to create an api for the system. identify the best solution to e implemented for the API.
 
 Scenarios: USER
+
     a user needs to login to create/ log a ticket - if a ticket exists they should be able to upvote
     gets notified by email of sms when a ticket is in progress or has been resolved
     should also be able check updates 
     view other tickets loged in the area
     follow up on the ticket status - speak to call center agent 
     verify completion of a task or resolution of a ticket.
+
 Scenario: Tickets
+
     belong to a department
     they can have priorities (low,medium,high,urgent)
     status updates 
     ticket can expire and when it expires the department will have to be held accountable.
     verification of ticket resolution using OTP or QR codes etc.
+
 Scenario: Department
+
     employees and admins  to login
     auto assignment of tickets
     ticket assignment overide by responsible personel (someone having an admin role)
@@ -63,6 +69,7 @@ Scenario: Department
     report on all logged tickets (monthly - yearly)
 
 Behavioural Driven Development (BDD).
+
 cucumber + playwright
 
 
