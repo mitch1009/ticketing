@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tsc && cucumber-js --require ./dist/"
+    "build":"tsc",
+    "test": "pnpm build && pnpm cucumber-js --require ./dist/"
   },
   "keywords": [],
   "author": "",
