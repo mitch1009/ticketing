@@ -4,8 +4,9 @@ name: Deploy Test Results
 on:
   # Runs on pushes targeting the default branch
   pull_request:
-    branches: ["main"]
-    types: [ closed] 
+    types: [ closed ] 
+    branches:
+      - main
     paths: 
       - "bdd/**"
 
