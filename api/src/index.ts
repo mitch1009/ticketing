@@ -16,7 +16,6 @@ const server = new ApolloServer<Partial<TicketContext>>({ typeDefs, resolvers })
 // create http server
 const httserver = http.createServer(api);
 await server.start()
-
 api.use(
   env.ENDPOINT as string,
   cors<cors.CorsRequest>({ origin: (env.ORIGINS as string)?.split('|') }),
