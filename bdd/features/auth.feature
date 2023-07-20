@@ -1,13 +1,13 @@
 Feature: User Authentication
-    User should be able to register n account
+    User should be able to register an account
 
-    User Sory:
+    User Story:
         * as a user i want to be able to create an account
-        * after creeating an account i should be avle to be verified and activate my account
+        * after creeating an account i should be able to be verified and activate my account
         * if i did not recive a verification code, i should be able to resend an OTP
         * if i have made a mistake in my email i should be able to chnage it
     Acceptance criteria:
-        * User should e registerged in the system
+        * User should be registerged in the system
     Scenario: Create Account
         Given Jane visist the platform and wants to create an account
         Then she enters her credentials "<name>" "<email>" "<phone>" "<password>"

@@ -1,7 +1,9 @@
 # Ticketing System Application API v0.0.1
 
 ## TOOLS
+
 storage:
+
     - postgres
     - MySQL / MariaDb
     - mogodb : NoSQL
@@ -12,7 +14,9 @@ storage:
     - supabase: NoSQL
     - cocroachDB
     - Redis - queuing systems
+
 schema
+
     relationships
         - one to many
         - many to many

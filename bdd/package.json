@@ -1,0 +1,19 @@
+{
+  "name": "bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && cucumber-js --require ./dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.36.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^9.3.0"
+  }
+}
