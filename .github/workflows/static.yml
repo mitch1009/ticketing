@@ -7,6 +7,7 @@ on:
     types: [ closed ] 
     branches:
       - main
+      - feature/develop
     paths: 
       - "bdd/**"
       - "docs/**"
