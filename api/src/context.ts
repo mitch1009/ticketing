@@ -6,10 +6,4 @@ export declare interface TicketContext {
     action: () => void
 }
 
-export type mokona = {
-    name: string
-    email: string
-    gen: ()=> string
-}
-
 export type recomendedNames = "Dineo"| "Mokoena"| "Randy"| "Pitsi"
