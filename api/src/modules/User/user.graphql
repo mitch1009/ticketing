@@ -1,0 +1,23 @@
+type User {
+    id: ID!
+    email: String
+    phone: String
+    firstName: String
+    lastName: String
+    """ please create LocationInput and LocationOutput types """
+    location: LocationOutput
+    """ please create TicketInput and TicketOutput types """
+    tickets: [ID!] 
+}
+input UserInput {
+    email: String
+}
+extend type  Query {
+
+}
+extend type Mutation {
+    createUser(user: UserInput): Response
+}
+extend type Response {
+    user: User
+}

@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bdd": "pnpm --filter bdd",
-    "api": "pnpm --filter api",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api": "pnpm --filter api"
   },
   "keywords": [],
   "author": "",

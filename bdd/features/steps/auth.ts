@@ -1,5 +1,43 @@
-import { Given, Then, When} from "@cucumber/cucumber"
+import { Given, Then, When } from "@cucumber/cucumber";
+
   
+
+
+  Given('Jane visits the platform and wants to create an account but she does not like typing alot', function () {        
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+  });
+
+
+
+  Then('We should allow her to use social login', function () {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+  });
+
+
+  Then('John does no mind typing, as such he would love to use email and password process', function () {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+  });
+  Given('Jane forgot her password and clicks on forgot password link', function () {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+  });
+  
+  Then('she receives a password reset link or OTP', function () {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+  });
+  Given('Jane received the OTP and enters it in the input as {string}', function (string) {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+  });
+
+  Then('he enters her credentials {string} {string} {string} {string}', function (string, string2, string3, string4) {    
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+  });
   Given('Jane visist the platform and wants to create an account', function () {
     // const context = browser.contexts
     // Write code here that turns the phrase above into concrete actions
@@ -8,6 +46,11 @@ import { Given, Then, When} from "@cucumber/cucumber"
 
 
   Then('she enters her credentials {string} {string} {string} {string}', function (string, string2, string3, string4) {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+  });
+
+  Then('receive an OTP in her email for account verification', function () {
     // Write code here that turns the phrase above into concrete actions
     return 'pending';
   });
