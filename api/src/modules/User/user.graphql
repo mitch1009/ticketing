@@ -9,15 +9,74 @@ type User {
     """ please create TicketInput and TicketOutput types """
     tickets: [ID!] 
 }
+
 input UserInput {
     email: String
 }
+
 extend type  Query {
 
 }
+
 extend type Mutation {
     createUser(user: UserInput): Response
 }
+
 extend type Response {
     user: User
+}
+
+type LocationOutput {
+    street: String
+    province: String
+    country: String
+    postalCode: String
+    houseNumber: String
+    suburb: String
+    latitudes: String
+    longitudes: String
+    city: String
+}
+
+input LocationInput {
+    street: String
+    province: String
+    country: String
+    postalCode: String
+    houseNumber: String
+    suburb: String
+    latitudes: String
+    longitudes: String
+    city: String
+}
+
+type TicketOutput {
+    id: ID
+    issue: String
+    priority: priorityType
+    status: StatusType
+    datecreated: Date
+    expirydate: Date
+}
+
+enum statusType {
+    FIXED,
+    APPROVED,
+    INPROGRESS,
+}
+
+enum priorityType {
+    LOW,
+    MEDIUM, 
+    HIGH,
+    URGENT,
+}
+
+input TicketInput {
+    id: ID!
+    issue: String  
+    priority: priorityType
+    status: StatusType
+    datecreated: Date
+    expirydate: Date
 }
