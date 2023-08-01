@@ -1,0 +1,17 @@
+input TicketInput {
+    id: ID!
+    issue: String  
+    priority: priorityType
+    status: StatusType
+    datecreated: Date
+    expirydate: Date
+}
+
+type TicketOutput {
+    id: ID
+    issue: String
+    priority: priorityType
+    status: StatusType
+    datecreated: Date
+    expirydate: Date
+}

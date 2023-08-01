@@ -7,24 +7,15 @@ type User {
     """ please create LocationInput and LocationOutput types """
     location: LocationOutput
     """ please create TicketInput and TicketOutput types """
-    tickets: [ID!] 
+    tickets: [TicketOutput] 
+    ticketId: [ID!]
 }
 
 input UserInput {
     email: String
 }
 
-extend type  Query {
 
-}
-
-extend type Mutation {
-    createUser(user: UserInput): Response
-}
-
-extend type Response {
-    user: User
-}
 
 type LocationOutput {
     street: String
@@ -50,33 +41,30 @@ input LocationInput {
     city: String
 }
 
-type TicketOutput {
-    id: ID
-    issue: String
-    priority: priorityType
-    status: StatusType
-    datecreated: Date
-    expirydate: Date
-}
-
 enum statusType {
-    FIXED,
-    APPROVED,
-    INPROGRESS,
+    FIXED
+    APPROVED
+    INPROGRESS
 }
 
 enum priorityType {
-    LOW,
-    MEDIUM, 
-    HIGH,
-    URGENT,
+    LOW
+    MEDIUM
+    HIGH
+    URGENT
 }
 
-input TicketInput {
-    id: ID!
-    issue: String  
-    priority: priorityType
-    status: StatusType
-    datecreated: Date
-    expirydate: Date
+
+
+extend type Response {
+    user: User
+}
+
+extend type  Query {
+
+}
+
+extend type Mutation {
+    createUser(user: UserInput): Response
+   
 }
