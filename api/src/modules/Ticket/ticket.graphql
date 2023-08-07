@@ -1,17 +1,31 @@
+scalar DateTime
 input TicketInput {
     id: ID!
     issue: String  
-    priority: priorityType
+    priority: PriorityType
     status: StatusType
-    datecreated: Date
-    expirydate: Date
+    datecreated: DateTime
+    expirydate: DateTime
 }
 
+scalar DateTime
 type TicketOutput {
     id: ID
     issue: String
-    priority: priorityType
+    priority: PriorityType
     status: StatusType
-    datecreated: Date
-    expirydate: Date
+    datecreated: DateTime
+    expirydate: DateTime
+}
+enum StatusType {
+    FIXED
+    APPROVED
+    INPROGRESS
+}
+
+enum PriorityType {
+    LOW
+    MEDIUM
+    HIGH
+    URGENT
 }

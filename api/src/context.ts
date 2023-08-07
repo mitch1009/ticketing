@@ -3,7 +3,7 @@ export declare interface TicketContext {
     req: any
     user: any
     db: any
-    action: () => void
+    action: () => any
 }
 
 export type recomendedNames = "Dineo"| "Mokoena"| "Randy"| "Pitsi"

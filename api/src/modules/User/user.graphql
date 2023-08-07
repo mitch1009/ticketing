@@ -15,8 +15,6 @@ input UserInput {
     email: String
 }
 
-
-
 type LocationOutput {
     street: String
     province: String
@@ -41,19 +39,6 @@ input LocationInput {
     city: String
 }
 
-enum statusType {
-    FIXED
-    APPROVED
-    INPROGRESS
-}
-
-enum priorityType {
-    LOW
-    MEDIUM
-    HIGH
-    URGENT
-}
-
 
 
 extend type Response {
@@ -61,10 +46,9 @@ extend type Response {
 }
 
 extend type  Query {
-
+    getprofile: Response
 }
 
 extend type Mutation {
     createUser(user: UserInput): Response
-   
 }

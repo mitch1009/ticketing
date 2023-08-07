@@ -5,7 +5,7 @@ import http from 'http'
 import { TicketContext } from "./context.js";
 import cors from 'cors'
 import { expressMiddleware } from '@apollo/server/express4';
-import { typeDefs, resolvers } from "./common/index.js";
+import { typeDefs, resolvers, prisma } from "./common/index.js";
 dotenv.config()
 // barrel file 
 const { env } = process
@@ -21,7 +21,7 @@ api.use(
   cors<cors.CorsRequest>({ origin: (env.ORIGINS as string)?.split('|') }),
   json(),
   expressMiddleware(server, {
-    context: async ({ req, res }) => ({ req, res }),
+    context: async ({ req, res }) => ({ req, res, db: prisma }),
   }),
 );
 new Promise<void>((resolve) => httserver.listen({ port: env.PORT ? +env.PORT : 6700 }, resolve))
