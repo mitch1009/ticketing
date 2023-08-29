@@ -1,0 +1,12 @@
+type Query {
+    hello: String
+    
+}
+type Mutation {
+    hello(name:String): String
+} 
+
+type Response {
+    message: String!
+    success: Boolean!
+}
