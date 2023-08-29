@@ -2,9 +2,9 @@
 
 create the following:
  
--  location model (inside src/models)
+- [ ]  location model (inside src/models)
     - a graphql file
     - a resolver
     - a service
-- create the location prisma model
+- [x] create the location prisma model
 
