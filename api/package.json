@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "postbuild": "cp ./src/modules/**/*.graphql graphql",
     "watch": "tsc -w",
     "dev": "pnpm build && nodemon ./dist/index.js",
     "test": ""
