@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "bdd": "pnpm --filter bdd",
-    "api": "pnpm --filter api"
+    "api": "pnpm --filter api",
+    "push": "git push --signed=false"
   },
   "keywords": [],
   "author": "",
