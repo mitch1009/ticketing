@@ -7,6 +7,6 @@ type Mutation {
 } 
 
 type Response {
-    message: String
-    success: Boolean
+    message: String!
+    success: Boolean!
 }

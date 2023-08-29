@@ -1,3 +1,4 @@
+import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library.js";
 import { TicketContext } from "../../context.js";
 
 /**

@@ -1,0 +1,32 @@
+extend type Query {
+    getLocation(id:ID!): Response
+}
+extend type Mutation {
+    addLocation(location: LocationInput!): Response
+}
+extend type Response {
+    location: LocationOutput
+}
+type LocationOutput {
+    street: String
+    province: String
+    country: String
+    postalCode: String
+    houseNumber: String
+    suburb: String
+    latitudes: String
+    longitudes: String
+    city: String
+}
+
+input LocationInput {
+    street: String
+    province: String
+    country: String
+    postalCode: String
+    houseNumber: String
+    suburb: String
+    latitudes: String
+    longitudes: String
+    city: String
+}

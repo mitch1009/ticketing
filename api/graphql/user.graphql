@@ -7,39 +7,13 @@ type User {
     """ please create LocationInput and LocationOutput types """
     location: LocationOutput
     """ please create TicketInput and TicketOutput types """
-    tickets: [TicketOutput] 
+    tickets: [TicketOutput]
     ticketId: [ID!]
 }
 
 input UserInput {
     email: String
 }
-
-type LocationOutput {
-    street: String
-    province: String
-    country: String
-    postalCode: String
-    houseNumber: String
-    suburb: String
-    latitudes: String
-    longitudes: String
-    city: String
-}
-
-input LocationInput {
-    street: String
-    province: String
-    country: String
-    postalCode: String
-    houseNumber: String
-    suburb: String
-    latitudes: String
-    longitudes: String
-    city: String
-}
-
-
 
 extend type Response {
     user: User
